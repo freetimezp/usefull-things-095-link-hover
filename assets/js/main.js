@@ -1,5 +1,4 @@
-
-let elements = document.querySelectorAll('.text');
+let elements = document.querySelectorAll(".text");
 
 elements.forEach((element) => {
     let innerText = element.innerText;
@@ -21,31 +20,3 @@ elements.forEach((element) => {
     element.appendChild(textContainer);
     element.appendChild(textContainer.cloneNode(true));
 });
-
-elements.forEach((element) => {
-    element.addEventListener("mouseover", () => {
-        element.classList.remove("play");
-    });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

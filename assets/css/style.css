@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
 
 * {
     padding: 0;
@@ -14,7 +14,7 @@ a {
 
 :root {
     --bg: #e3e3e3;
-    --primary: #f5771b;
+    --primary: #9f4e8f;
     --secondary: #222;
 }
 
@@ -24,7 +24,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg);
+    background: url(../images/bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -44,8 +45,7 @@ body {
     overflow: hidden;
 }
 
-.text:hover .letter,
-.text.play .letter {
+.text:hover .letter {
     transform: translateY(-100%);
 }
 
@@ -55,7 +55,7 @@ body {
 
 .text .letter {
     display: inline-block;
-    transition: transform .6s cubic-bezier(0.76, 0, 0.024, 1);
+    transition: transform 0.6s cubic-bezier(0.76, 0, 0.024, 1);
 }
 
 .letter:nth-child(1) {
@@ -89,11 +89,8 @@ body {
     transition-delay: 0.27s;
 }
 .letter:nth-child(11) {
-    transition-delay: 0.30s;
+    transition-delay: 0.3s;
 }
 .letter:nth-child(12) {
     transition-delay: 0.33s;
 }
-
-
-
